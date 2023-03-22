@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FavouriteLocationDataFragment">
+
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="@string/title_of_the_favourite_location"
+        android:layout_margin="33dp"
+        android:autofillHints=""
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/et_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_title"
+        android:layout_margin="33dp"
+        android:lines="8"
+        android:gravity="top|start"
+        android:hint="@string/description_of_the_location"
+        android:autofillHints=""
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"/>
+
+    <RatingBar
+        android:id="@+id/rb_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_description"
+        android:layout_margin="33dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rb_rating"
+        android:layout_margin="33dp"
+        android:id="@+id/b_cancel"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        app:layout_constraintTop_toBottomOf="@id/rb_rating"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="33dp"
+        android:id="@+id/b_save"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

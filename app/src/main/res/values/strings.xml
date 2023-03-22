@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">N01414195 - FavLocAssessment</string>
+    <string name="todo">TODO</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_of_the_favourite_location">Title of the favourite location</string>
+    <string name="description_of_the_location">Description of the location</string>
+    <string name="save">Save</string>
+</resources>
